@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+{{ partial "logo.html" . }}
+<div class="page-content">
+	{{ partial "docs/sidebar.html" . }}
+	<article class="article-docs article-main-column">
+
+		<h1>{{ .Title }}</h1>
+		{{ if not (in .RelPermalink "v0.9") }}
+		<div class="flash">
+			<p><b>Warning! This version of InfluxDB is no longer in active development.</b></p>
+			<b><a href="/docs/v0.9/introduction/overview.html">Version 0.9</a> is the most recent version of InfluxDB.</b>
+		</div>
+		<br />
+		{{ end }}
+		{{ .Content }}
+		{{ if in .RelPermalink "v0.9" }}
+			{{ partial "docs/contribute.html" . }}
+		{{ end }}
+	</article>
+
+	<script>
+		[].slice.call(document.querySelectorAll(".article-docs h2")).forEach(function(el,i){
+			var id, text;
+			id = el.id;
+			text = el.innerText ? el.innerText : el.textContent;
+			el.innerHTML = '<a href="#' + id + '">' + text + '</a>';
+		});
+	</script>
+	
+</div>
+{{ partial "nav.html" . }}
+{{ partial "footer.html" . }}

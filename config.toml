@@ -1,0 +1,24 @@
+# Site info
+title = "InfluxDB"
+baseurl = "https://influxdb.com/"
+
+# Site configuration
+languageCode = "en-US"
+config = "config.toml"
+publishdir = "public"
+contentdir = "content"
+layoutdir = "layouts"
+
+# Use urls that end in .html
+uglyurls = true
+
+# Site links
+[permalinks]
+  site = "/:filename/index.html"
+
+[params]
+  CustomersUrl = "http://localhost:5000"
+  StripeApiToken = "pk_test_raFtCBUQIROL9yvZdgFy532f"
+
+[blackfriday]
+  plainIdAnchors = true

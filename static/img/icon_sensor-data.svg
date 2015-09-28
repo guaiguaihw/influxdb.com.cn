@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 -5 200 130" enable-background="new 0 -5 200 130" xml:space="preserve">
+<ellipse opacity="0.2" fill="#008FB8" enable-background="new    " cx="100" cy="60" rx="70" ry="20"/>
+<ellipse opacity="0.3" fill="#008FB8" enable-background="new    " cx="100" cy="80" rx="40" ry="15"/>
+<g opacity="0.75">
+	<path fill="#008FB8" d="M100,42c40.1,0,68,9.5,68,18s-27.9,18-68,18s-68-9.5-68-18S59.9,42,100,42 M100,40c-38.7,0-70,9-70,20
+		s31.3,20,70,20s70-9,70-20S138.7,40,100,40L100,40z"/>
+</g>
+<g opacity="0.5">
+	<path fill="#008FB8" d="M100,66c21.1,0,39,6.4,39,14s-17.9,14-39,14s-39-6.4-39-14S78.9,66,100,66 M100,65c-22.1,0-40,6.7-40,15
+		s17.9,15,40,15s40-6.7,40-15S122.1,65,100,65L100,65z"/>
+</g>
+<g>
+	<path fill="none" stroke="#008FB8" stroke-miterlimit="10" d="M106,102"/>
+</g>
+<ellipse opacity="0.1" fill="#008FB8" enable-background="new    " cx="100" cy="30" rx="100" ry="30"/>
+<g>
+	<path fill="#008FB8" d="M100,3c57.2,0,97,14.2,97,27c0,6.4-10.2,13.2-27.2,18.3C151.2,53.9,126.4,57,100,57C42.8,57,3,42.8,3,30
+		c0-6.4,10.2-13.2,27.2-18.3C48.8,6.1,73.6,3,100,3 M100,0C44.8,0,0,13.4,0,30s44.8,30,100,30s100-13.4,100-30S155.2,0,100,0L100,0z
+		"/>
+</g>
+<ellipse fill="#004375" cx="100" cy="112" rx="16" ry="8"/>
+<ellipse fill="#FFAA00" cx="100" cy="105" rx="10" ry="5"/>
+</svg>

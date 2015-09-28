@@ -1,0 +1,117 @@
+{{ partial "header.html" . }}
+{{ partial "logo.html" . }}
+<article class="article-home">
+
+	<section id="top" class="home-top">
+	
+		<h1>An open-source distributed time series database with no external dependencies.</h1>
+		
+		<p><b>InfluxDB</b> is the new home for all of your metrics, events, and analytics.</p>
+	
+	</section>
+	
+	<section id="follow" class="home-follow">
+		
+		<h2>Subscribe to receive product updates:</h2>
+
+		<!-- Begin MailChimp Signup Form -->
+		<form class="subscribe" action="https://errplane.us5.list-manage.com/subscribe/post?u=4d17b6adac2728b1ea6e4926b&amp;id=08af34971b" method="post" target="_blank">
+			<input type="text" name="EMAIL" placeholder="your email address" required>
+			<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button radius">
+		</form>
+		<!--End mc_embed_signup-->
+
+	</section>
+	
+	<section class="use-cases">
+		
+		<h2>InfluxDB Use Cases</h2>
+		
+		<ul>
+			<li class="feature-module">
+				
+				<figure class="metrics"></figure>
+				
+				<h3>Metrics</h3>
+	
+				<p>Pair InfluxDB with Grafana, CollectD, Sensu, or cAdvisor to roll your own custom DevOps solutions. You'll have full visibility into your infrastructure, servers, applications, and Docker containers.</p>
+			</li>
+			
+			<li class="feature-module">
+			
+				<figure class="analytics"></figure>
+			
+				<h3>Real-time Analytics</h3>
+				
+				<p>Track user and business analytics in real-time with InfluxDB. Use a client library in your favorite language to track events and numbers and visualize it all with realtime dashboards on top of Grafana.</p>
+			</li>
+			
+			<li class="feature-module">
+				
+				<figure class="sensor-data"></figure>
+				
+				<h3>Sensor Data</h3>
+				<p>InfluxDB is designed to track data from tens of thousands of sensors all sampling at rates of once a second or more. Using the Influx JavaScript library and your favorite charting library, you can build custom sensor analytics in a few hours.</p>
+			</li>
+		
+		</ul>
+		
+		<p class="call-to-action"><a href="docs/v0.9/introduction/getting_started.html">Get Started with InfluxDB</a></p>
+		
+	</section>
+	
+	<section class="features">
+		
+		<h2>Features</h2>
+		
+		<ul>
+			<li class="feature-module">
+				
+				<figure class="time-centric"></figure>
+				
+				<h3>Time-Centric Functions</h3>
+				<p>Everything in InfluxDB is a time series that you can perform standard functions on like min, max, sum, count, mean, median, percentiles, and more.</p></li>
+				
+			<li class="feature-module">
+				
+				<figure class="scalable"></figure>
+				
+				<h3>Scalable Metrics</h3>
+				<p>Collect your data on any interval and compute rollups on the fly later. Track 100 metrics or 1 million – InfluxDB is designed to scale horizontally.</p></li>
+				
+			<li class="feature-module">
+				
+				<figure class="events"></figure>
+				
+				<h3>Events</h3>
+				<p>InfluxDB's data model supports arbitrary event data. You can write in a hash of associated data and count events, uniques, or grouped columns on the fly.</p></li>
+
+			<li class="feature-module">
+
+				<figure class="network"></figure>
+
+				<h3>Native HTTP API</h3>
+				<p>Our built-in API makes it easy to read and write data from JavaScript. Build custom analytics frontends without writing a single line of server-side code.</p></li>
+				
+			<li class="feature-module">
+
+				<figure class="query"></figure>
+
+				<h3>Powerful Query Language</h3>
+				<p>A SQL-like query language designed for working with time series and analytics. Create and run queries without needing a programmer around.</p></li>
+				
+			<li class="feature-module">
+				
+				<figure class="explorer"></figure>
+				
+				<h3>Built-in Explorer</h3>
+				<p>InfluxDB ships with a built-in interface for querying and visualizing your data. You can manage databases, users, and permissions, too.</p></li>
+				
+		</ul>
+		
+	</section>
+	
+	
+</article>
+{{ partial "nav.html" . }}
+{{ partial "footer.html" . }}

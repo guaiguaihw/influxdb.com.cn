@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+{{ partial "logo.html" . }}
+<div class="page-content">
+	{{ partial "sidebar.html" . }}
+	<article class="article-docs article-main-column">
+		<h1 class="docs header">InfluxDB Documentation</h1>
+		Welcome to the InfluxDB documentation. Pick a version of the docs to get started, or navigate using the menu on the left for the documentation on the most recent version.
+		<ul class="blog-archive">
+		{{ range .Data.Pages }}
+			<h2 class="blog-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+		{{ end }}
+		</ul>
+	</article>
+</div>
+{{ partial "nav.html" . }}
+{{ partial "footer.html" . }}

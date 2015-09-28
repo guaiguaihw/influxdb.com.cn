@@ -1,0 +1,22 @@
+{{ partial "header.html" . }}
+{{ partial "logo.html" . }}
+<div class="page-content">	
+	<article class="article-docs article-main-column">
+		<h1 class="docs header">InfluxDB Blog</h1>
+		<ul class="blog-archive">
+		{{ range .Data.Pages.ByPublishDate.Reverse }}
+			<li>
+				<h5 class="blog-post-metadata"><b>Author</b> &middot; {{ .Date.Format "January 2, 2006" }}</h5>
+				<h2 class="blog-heading"><a href="{{ .url }}">{{ .Title }}</a></h2>
+				<p>{{ .Summary }}</p>
+				{{ if .Truncated }}
+				<p><a href="{{ .Permalink }}">Read More &raquo;</a></p>
+				{{ end }}
+			</li>
+		{{ end }}
+		</ul>
+	</article>
+	{{ partial "sidebar.html" . }}
+</div>
+{{ partial "nav.html" . }}
+{{ partial "footer.html" . }}

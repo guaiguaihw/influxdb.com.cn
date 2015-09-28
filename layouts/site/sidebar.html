@@ -1,0 +1,10 @@
+{{ partial "header.html" . }}
+{{ partial "logo.html" . }}
+<div class="page-content">
+	<article class="article-docs article-main-column">
+		{{ .Content }}
+	</article>
+	{{ partial "sidebar.html" . }}
+</div>
+{{ partial "nav.html" . }}
+{{ partial "footer.html" . }}

@@ -1,0 +1,115 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US"><!--<![endif]-->
+<head id="www-influxdb-com">
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>{{ if .Title }}{{ title .Title }} | InfluxDB{{ else }}InfluxDB - Open Source Time Series, Metrics, and Analytics Database{{ end }}</title>
+	
+	<meta name="title" content="{{ if .Title }}{{ title .Title }}{{ else }}InfluxDB - Open Source Time Series, Metrics, and Analytics Database{{ end }}" />
+	<meta name="description" content="{{ if .Description }}{{ .Description }}{{ end }}" />
+	<!-- <meta name="author" content="" /> -->
+	<!-- Google will often use this as its description of your page/site. Make it good. -->
+	
+	<!-- <meta name="google-site-verification" content="" /> -->
+	<!-- Speaking of Google, don't forget to set your site up: http://google.com/webmasters -->
+
+	<meta name="Copyright" content="InfluxDB" />
+	
+	<!--  Mobile Viewport Fix
+	http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<link rel="alternate" type="application/rss+xml" title="InfluxDB Blog" href="https://influxdb.com/index.xml" />
+
+	<!-- Iconifier might be helpful for generating favicons and touch icons: http://iconifier.net -->
+	<link rel="shortcut icon" href="/img/favicon.ico" />
+	<link rel="apple-touch-icon" href="/img/apple-touch-icon.png" />
+	<!-- The is the icon for iOS's Web Clip and other things.
+		 - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for retina display (IMHO, just go ahead and use the biggest one)
+		 - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+		 - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+	
+	<!-- concatenate and minify for production -->
+	<link rel="stylesheet" href="/css/reset.css" />
+	<link rel="stylesheet" href="/css/adobe-blank.css" />
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
+	
+	<!-- css for prism syntax highlighting -->
+	<link rel="stylesheet" href="/css/prism.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	
+	<!-- Lea Verou's Prefix Free, lets you use only un-prefixed properties in yuor CSS files -->
+	<script src="/js/prefixfree.min.js"></script>
+	
+	<!-- This is an un-minified, complete version of Modernizr. 
+		 Before you move to production, you should generate a custom build that only has the detects you need. -->
+	<script src="/js/modernizr-2.7.0.dev.js"></script>
+	
+	<!-- Application-specific meta tags -->
+	<!-- Windows 8 -->
+	<meta name="application-name" content="InfluxDB" /> 
+	<meta name="msapplication-TileColor" content="" /> 
+	<meta name="msapplication-TileImage" content="https://influxdb.com/img/logo_influxdb.png" />
+	<!-- Twitter -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@influxdb">
+	<meta name="twitter:title" content="InfluxDB">
+	<meta name="twitter:description" content="Open Source Time Series, Metrics, and Analytics Database">
+	<meta name="twitter:image" content="https://influxdb.com/img/logo_influxdb.png" />
+	<!-- Facebook -->
+	<meta property="og:title" content="InfluxDB" />
+	<meta property="og:description" content="Open Source Time Series, Metrics, and Analytics Database" />
+	<meta property="og:url" content="https://influxdb.com/" />
+	<meta property="og:image" content="https://influxdb.com/img/logo_influxdb.png" />
+	<!-- Google -->
+	<meta name="google-site-verification" content="Qa4cVa_M02QG2zCUOfOkD-ibbFDLdDbnwdwn1bqNhco" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script type="text/javascript" src="https://marketing.influxdb.com/acton/form/16929/0004/form.js">
+    </script>
+    <script type="text/javascript">
+        function formElementSerializers() { function input(element) { switch (element.type.toLowerCase()) { case 'checkbox': case 'radio': return inputSelector(element); default: return valueSelector(element); } };
+        function inputSelector(element) { return element.checked ? element.value : null; };
+        function valueSelector(element) { return element.value; };
+        function select(element) { return (element.type === 'select-one' ? selectOne : selectMany)(element); };
+        function selectOne(element) { var index = element.selectedIndex; return index < 0 ? null : optionValue(element.options[index]); };
+        function selectMany(element) { var length = element.length; if (!length) return null; var values = []; for (var i = 0; i < length; i++) { var opt = element.options[i]; if (opt.selected) values.push(optionValue(opt)); } return values; };
+        function optionValue(opt) { if (document.documentElement.hasAttribute) return opt.hasAttribute('value') ? opt.value : opt.text; var element = document.getElementById(opt); if (element && element.getAttributeNode('value')) return opt.value; else return opt.text; };
+        return { input: input, inputSelector: inputSelector, textarea: valueSelector, select: select, selectOne: selectOne, selectMany: selectMany, optionValue: optionValue, button: valueSelector };
+        };
+        var requiredFields = new Array(); var requiredFieldGroups = new Array(); addRequiredField = function (id) { requiredFields.push (id); };
+        addRequiredFieldGroup = function (id, count) { requiredFieldGroups.push ([id, count]); };
+        missing = function (fieldName) { var f = document.getElementById(fieldName); var v = formElementSerializers()[f.tagName.toLowerCase()](f); if (v) { v = v.replace (/^\s*(.*)/, "$1"); v = v.replace (/(.*?)\s*$/, "$1"); } if (!v) { f.style.backgroundColor = '#FFFFCC'; return 1; } else { f.style.backgroundColor = ''; return 0; } };
+        missingGroup = function (fieldName, count) { var result = 1; var color = '#FFFFCC'; for (var i = 0; i < count; i++) { if (document.getElementById(fieldName+'-'+i).checked) { color = ''; result = 0; break; } } for (var i = 0; i < count; i++) document.getElementById(fieldName+'-'+i).parentNode.style.backgroundColor = color; return result; };
+        var validatedFields = new Array(); addFieldToValidate = function (id, validationType, arg1, arg2) { validatedFields.push ([ id, validationType, arg1, arg2 ]); };
+        validateField = function (id, fieldValidationValue, arg1, arg2) { var field = document.getElementById(id); var name = field.name; var value = formElementSerializers()[field.tagName.toLowerCase()](field); for (var i = 0; i < validators.length; i++) { var validationDisplay = validators[i][3]; var validationValue = validators[i][1]; var validationFunction	= validators[i][2]; if (validationValue === fieldValidationValue) { if (!validationFunction (value,arg1,arg2,id)) { field.style.backgroundColor = '#FFFFCC'; alert (validationDisplay); return false; } else { field.style.backgroundColor = ''; } break; } } for (var i = 0; i < implicitValidators.length; i++) { var validationDisplay = implicitValidators[i][0]; var validationValue = implicitValidators[i][1]; var validationFunction	= implicitValidators[i][2]; if (validationValue === fieldValidationValue) { if (!validationFunction (value,arg1,arg2,id)) {	field.style.backgroundColor = '#FFFFCC'; alert (validationDisplay); return false; } else { field.style.backgroundColor = ''; } break; } } return true; };
+        var r = ''; formElementById = function(form, id) { for (var i = 0; i < form.length; ++i) if (form[i].id === id) return form[i]; return null; };
+        doSubmit = function(form) {
+            try {
+                if (typeof(customSubmitProcessing) === "function") customSubmitProcessing();
+            } catch (err) { }
+        var ao_jstzo = formElementById(form, "ao_jstzo");
+        if (ao_jstzo) ao_jstzo.value = new Date().getTimezoneOffset();
+        var submitButton = document.getElementById(form.id+'_ao_submit_button');
+        submitButton.style.visibility = 'hidden';
+        var missingCount = 0;
+        for (var i = 0; i < requiredFields.length; i++) if (requiredFields[i].indexOf(form.id+'_') === 0) missingCount += missing (requiredFields[i]);
+        for (var i = 0; i < requiredFieldGroups.length; i++) if (requiredFieldGroups[i][0].indexOf(form.id+'_') === 0) missingCount += missingGroup (requiredFieldGroups[i][0], requiredFieldGroups[i][1]); if (missingCount >
+        0) { alert ('Please fill all required fields. '); submitButton.style.visibility = 'visible'; return; } for (var i = 0; i < validatedFields.length; i++) { var ff = validatedFields[i]; if (ff[0].indexOf(form.id+'_') === 0 && !validateField (ff[0], ff[1], ff[2], ff[3])) { document.getElementById(ff[0]).focus(); submitButton.style.visibility = 'visible'; return; } } if (formElementById(form, 'ao_p').value === '1') { submitButton.style.visibility = 'visible'; return; } formElementById(form, 'ao_bot').value = 'nope'; form.submit(); };
+    </script>
+</head>
+
+<body>
+    <script>/*<![CDATA[*/(function(w,a,b,d,s){w[a]=w[a]||{};w[a][b]=w[a][b]||{q:[],track:function(r,e,t){this.q.push({r:r,e:e,t:t||+new Date});}};var e=d.createElement(s);var f=d.getElementsByTagName(s)[0];e.async=1;e.src='//marketing.influxdb.com/cdnr/93/acton/bn/tracker/16929';f.parentNode.insertBefore(e,f);})(window,'ActOn','Beacon',document,'script');ActOn.Beacon.track();/*]]>*/</script>
+

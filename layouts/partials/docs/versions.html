@@ -1,0 +1,9 @@
+<h3><a href="/docs/index.html">Versions</a></h3>
+<ul>
+	<li{{ if in .RelPermalink "v0.9" }} class="nav-active-item"{{ end }}><a href="/docs/v0.9/introduction/overview.html">v0.9 (current)</a></li>
+	<ul>
+		<li{{ if in .RelPermalink "v0.8" }} class="nav-active-item"{{ end }}><a href="/docs/v0.8/introduction/overview.html">v0.8</a></li>
+		<li{{ if in .RelPermalink "v0.7" }} class="nav-active-item"{{ end }}><a href="/docs/v0.7/introduction/overview.html">v0.7</a></li>
+		<li{{ if in .RelPermalink "v0.6" }} class="nav-active-item"{{ end }}><a href="/docs/v0.6/introduction/overview.html">v0.6</a></li>
+	</ul>
+</ul>

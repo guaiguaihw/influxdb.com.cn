@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+{{ partial "logo.html" . }}
+
+<article class="article-support">
+    <section style="margin-bottom: 0;" class="support-subscriptions">
+
+        <h1>Chronograf</h1>
+
+        <h3 style="text-align:center;">Downloads</h3>
+    </section>
+</article>
+
+<div class="page-content">
+	<article class="article-docs article-main-column chronograf">
+		{{ .Content }}
+	</article>
+</div>
+
+{{ partial "nav.html" . }}
+{{ partial "footer.html" . }}

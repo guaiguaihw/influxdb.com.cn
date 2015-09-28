@@ -1,0 +1,14 @@
+<aside class="nav-docs">
+{{ if in .RelPermalink "v0.9" }}
+	{{ partial "docs/v0.9/sidebar.html" . }}
+{{ end }}
+{{ if in .RelPermalink "v0.8" }}
+	{{ partial "docs/v0.8/sidebar.html" . }}
+{{ end }}
+{{ if in .RelPermalink "v0.7" }}
+	{{ partial "docs/v0.7/sidebar.html" . }}
+{{ end }}
+{{ if in .RelPermalink "v0.6" }}
+	{{ partial "docs/v0.6/sidebar.html" . }}
+{{ end }}
+</aside>
