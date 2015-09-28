@@ -1,17 +1,17 @@
 ---
-title: Introduction
+title: 介绍
 ---
 
-The introductory documentation includes all the information needed to get up and running with InfluxDB.
+这个入门文档包含了你开始使用InfluxDB所需的所有内容。
 
-## [Overview](overview.html)
+## [概览](overview.html)
 
-Gives an introduction to the capabilities of InfluxDB.
+对InfluxDB的功能做了说明和介绍。
 
-## [Installation](installation.html)
+## [安装](installation.html)
 
-Provides instructions for installing InfluxDB on Ubuntu, Debian, RedHat, CentOS, and OS X.
+教你如何在 Ubuntu, Debian, RedHat, CentOS, 和 OS X上安装InfluxDB。
 
-## [Getting Started](getting_started.html)
+## [使用](getting_started.html)
 
-A introductory guide to reading and writing time series data using InfluxDB.
+如何简单的使用InfluxDB对时间序列的数据进行读写。
